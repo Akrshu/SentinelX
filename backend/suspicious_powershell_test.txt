@@ -1,0 +1,2 @@
+2023-10-24 15:00:00 | 4624 | admin | 10.0.0.30
+2023-10-24 15:01:00 | 4688 | admin | 10.0.0.30 | powershell.exe | powershell.exe -enc ABC123 | cmd.exe

@@ -1,0 +1,232 @@
+{
+  "INC-0002": {
+    "id": "INC-0002",
+    "title": "Suspicious Process Execution",
+    "severity": "High",
+    "risk_score": 70,
+    "status": "Open",
+    "findings": [],
+    "timeline": [
+      {
+        "id": "0",
+        "title": "Successful Login",
+        "description": "admin from 10.0.0.30",
+        "timestamp": "2023-10-24 15:00:00"
+      },
+      {
+        "id": "1",
+        "title": "Process Creation",
+        "description": "admin from 10.0.0.30",
+        "timestamp": "2023-10-24 15:01:00"
+      }
+    ],
+    "mitre": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "tactic": "Defense Evasion / Persistence",
+        "description": "Observed through Successful Login (Event ID 4624)."
+      },
+      {
+        "id": "T1059.001",
+        "name": "PowerShell",
+        "tactic": "Execution",
+        "description": "Observed through powershell.exe process execution (Event ID 4688)."
+      }
+    ],
+    "iocs": [
+      {
+        "id": "0",
+        "type": "IP",
+        "value": "10.0.0.30",
+        "confidence": "High"
+      },
+      {
+        "id": "1",
+        "type": "User",
+        "value": "admin",
+        "confidence": "High"
+      }
+    ],
+    "recommendations": [
+      {
+        "id": "0",
+        "title": "Suspicious Process Execution",
+        "description": "Investigate the process creation event, identify the executed process and command line, and isolate the host if malicious activity is confirmed."
+      }
+    ],
+    "events": [],
+    "notes": [],
+    "created_at": "2026-08-09T12:54:45.917103",
+    "updated_at": "2026-08-09T12:54:45.917103",
+    "is_deleted": false,
+    "deleted_at": null,
+    "trash_until": null,
+    "deleted_retention_days": null
+  },
+  "INC-0003": {
+    "id": "INC-0003",
+    "title": "Special Privilege Assignment",
+    "severity": "Low",
+    "risk_score": 15,
+    "status": "Open",
+    "findings": [],
+    "timeline": [
+      {
+        "id": "0",
+        "title": "Successful Login",
+        "description": "administrator from 10.0.0.40",
+        "timestamp": "2023-10-24 16:00:00"
+      },
+      {
+        "id": "1",
+        "title": "Special Privilege Assignment",
+        "description": "administrator from 10.0.0.40",
+        "timestamp": "2023-10-24 16:00:05"
+      }
+    ],
+    "mitre": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "tactic": "Defense Evasion / Persistence",
+        "description": "Observed through Successful Login (Event ID 4624)."
+      }
+    ],
+    "iocs": [
+      {
+        "id": "0",
+        "type": "IP",
+        "value": "10.0.0.40",
+        "confidence": "High"
+      },
+      {
+        "id": "1",
+        "type": "User",
+        "value": "administrator",
+        "confidence": "High"
+      }
+    ],
+    "recommendations": [
+      {
+        "id": "0",
+        "title": "Special Privilege Assignment",
+        "description": "Investigate the finding and validate the associated evidence."
+      }
+    ],
+    "events": [],
+    "notes": [],
+    "created_at": "2026-08-09T12:55:27.502532",
+    "updated_at": "2026-08-09T12:55:27.502532",
+    "is_deleted": false,
+    "deleted_at": null,
+    "trash_until": null,
+    "deleted_retention_days": null
+  },
+  "INC-0004": {
+    "id": "INC-0004",
+    "title": "No significant threats detected",
+    "severity": "Low",
+    "risk_score": 3,
+    "status": "Open",
+    "findings": [],
+    "timeline": [
+      {
+        "id": "0",
+        "title": "Successful Login",
+        "description": "alice from 10.0.0.25",
+        "timestamp": "2023-10-24 14:00:00"
+      },
+      {
+        "id": "1",
+        "title": "Process Creation",
+        "description": "alice from 10.0.0.25",
+        "timestamp": "2023-10-24 14:05:00"
+      }
+    ],
+    "mitre": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "tactic": "Defense Evasion / Persistence",
+        "description": "Observed through Successful Login (Event ID 4624)."
+      }
+    ],
+    "iocs": [
+      {
+        "id": "0",
+        "type": "IP",
+        "value": "10.0.0.25",
+        "confidence": "High"
+      },
+      {
+        "id": "1",
+        "type": "User",
+        "value": "alice",
+        "confidence": "High"
+      }
+    ],
+    "recommendations": [],
+    "events": [],
+    "notes": [],
+    "created_at": "2026-08-09T12:59:59.390773",
+    "updated_at": "2026-08-09T12:59:59.390773",
+    "is_deleted": false,
+    "deleted_at": null,
+    "trash_until": null,
+    "deleted_retention_days": null
+  },
+  "INC-0005": {
+    "id": "INC-0005",
+    "title": "No significant threats detected",
+    "severity": "Low",
+    "risk_score": 3,
+    "status": "Open",
+    "findings": [],
+    "timeline": [
+      {
+        "id": "0",
+        "title": "Successful Login",
+        "description": "alice from 10.0.0.25",
+        "timestamp": "2023-10-24 14:00:00"
+      },
+      {
+        "id": "1",
+        "title": "Process Creation",
+        "description": "alice from 10.0.0.25",
+        "timestamp": "2023-10-24 14:05:00"
+      }
+    ],
+    "mitre": [
+      {
+        "id": "T1078",
+        "name": "Valid Accounts",
+        "tactic": "Defense Evasion / Persistence",
+        "description": "Observed through Successful Login (Event ID 4624)."
+      }
+    ],
+    "iocs": [
+      {
+        "id": "0",
+        "type": "IP",
+        "value": "10.0.0.25",
+        "confidence": "High"
+      },
+      {
+        "id": "1",
+        "type": "User",
+        "value": "alice",
+        "confidence": "High"
+      }
+    ],
+    "recommendations": [],
+    "events": [],
+    "notes": [],
+    "is_deleted": false,
+    "deleted_at": null,
+    "trash_until": null,
+    "deleted_retention_days": null,
+    "created_at": "2026-08-09T13:44:16.405165",
+    "updated_at": "2026-08-09T13:44:16.405165"
+  }
+}

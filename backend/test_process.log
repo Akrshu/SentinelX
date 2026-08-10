@@ -1,0 +1,5 @@
+EventID:4625 User:Administrator IP:192.168.1.10 Time:10:30
+EventID:4625 User:Administrator IP:192.168.1.10 Time:10:31
+EventID:4625 User:Administrator IP:192.168.1.10 Time:10:32
+EventID:4624 User:Administrator IP:192.168.1.10 Time:10:33
+EventID:4688 User:Administrator IP:192.168.1.10 Time:10:34 ProcessName:powershell.exe CommandLine:powershell.exe -enc ABC123 ParentProcess:cmd.exe
