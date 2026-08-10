@@ -12,7 +12,7 @@ import {
 
 import type { InvestigationResult } from "@/types/investigation";
 
-const API = "http://127.0.0.1:8000";
+const API = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
 
 interface SOCCopilotProps {
   investigation: InvestigationResult;
@@ -483,3 +483,4 @@ export default function SOCCopilot({ investigation }: SOCCopilotProps) {
     </section>
   );
 }
+

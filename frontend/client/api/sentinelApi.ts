@@ -1,6 +1,7 @@
 import type { DashboardData } from "@/types/dashboard";
 import type { InvestigationResult, UploadLogResponse } from "@/types/investigation";
-const API = "http://127.0.0.1:8000";
+const API =
+  import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
 
 async function parseResponse<T>(response: Response): Promise<T> {
   if (!response.ok) {
