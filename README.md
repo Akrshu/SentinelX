@@ -40,3 +40,103 @@ readme = """# 🛡️ SentinelX
 🤖 AI-Assisted Analysis
       ↓
 📊 SOC Dashboard
+
+🎯 Core Capabilities
+Capability	Description
+📂 Log Ingestion	Upload security log files
+🔎 Detection & Parsing	Extract meaningful security activity
+🧠 Investigation	Build investigation context from events
+⚠️ Risk Assessment	Evaluate security risk
+🚨 Incident Management	Track security incidents
+🤖 SOC Copilot	AI-assisted investigation and analysis
+📊 Operations Dashboard	Monitor incidents and security posture
+🗑️ Incident Lifecycle	Manage incident workflow
+🖥️ Platform
+📊 Operations Overview
+
+Centralized security dashboard with:
+
+Total incidents
+Active incidents
+Critical incidents
+Average risk
+Threat posture
+Recent incidents
+🔍 Investigation Workflow
+Upload Log
+   ↓
+Parse Events
+   ↓
+Detect Suspicious Activity
+   ↓
+Correlate Evidence
+   ↓
+Generate Investigation
+   ↓
+Assess Risk
+   ↓
+Persist Incident
+🤖 AI-Assisted SOC Analysis
+
+SentinelX supports AI-assisted investigation through configured providers such as Google Gemini and OpenAI.
+
+🏗️ Architecture
+                  ┌──────────────────────┐
+                  │     SentinelX UI     │
+                  │ React + TypeScript   │
+                  └──────────┬───────────┘
+                             │ REST / HTTP
+                             ▼
+                  ┌──────────────────────┐
+                  │   FastAPI Backend    │
+                  │       Python         │
+                  └──────────┬───────────┘
+                             │
+          ┌──────────────────┼──────────────────┐
+          ▼                  ▼                  ▼
+   ┌────────────┐     ┌────────────┐     ┌────────────┐
+   │ Log Parser │     │ Detection  │     │Investigator│
+   │            │     │ Correlation│     │  Services  │
+   └────────────┘     └────────────┘     └─────┬──────┘
+                                                │
+                           ┌────────────────────┤
+                           ▼                    ▼
+                    ┌────────────┐      ┌─────────────┐
+                    │   SQLite   │      │ AI Providers│
+                    │  Database  │      │Gemini/OpenAI│
+                    └────────────┘      └─────────────┘
+🧩 Project Structure
+SentinelX/
+├── backend/
+│   ├── app/
+│   │   ├── ai/
+│   │   ├── api/
+│   │   ├── correlation/
+│   │   ├── database/
+│   │   ├── detection/
+│   │   ├── incidents/
+│   │   ├── parser/
+│   │   ├── risk/
+│   │   └── services/
+│   └── main.py
+│
+├── frontend/
+│   ├── client/
+│   │   ├── api/
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── pages/
+│   │   └── types/
+│   └── package.json
+│
+├── requirements.txt
+└── README.md
+🛠️ Tech Stack
+
+Frontend: React • TypeScript • Vite • Tailwind CSS • Radix UI • Recharts
+
+Backend: Python • FastAPI • SQLAlchemy • SQLite
+
+AI: Google Gemini • OpenAI
+
+Deployment: GitHub • Render
